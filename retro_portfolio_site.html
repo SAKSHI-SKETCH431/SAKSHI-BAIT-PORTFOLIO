@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(135deg, #ff80cc, #8ec5fc);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #1a1a1a;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+    }
+    header p {
+      font-size: 1rem;
+      color: #8ec5fc;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .headline {
+      background: #ffcc00;
+      color: #1a1a1a;
+      text-align: center;
+    }
+    .headline h2 {
+      font-size: 1.75rem;
+    }
+    .headline p {
+      margin-top: 15px;
+      font-size: 1rem;
+    }
+    .projects {
+      background: #1a1a1a;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+    .project-card {
+      background: #2d2d2d;
+      padding: 30px;
+      border: 4px double #ff80cc;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .project-card h3 {
+      margin: 10px 0;
+      color: #8ec5fc;
+      font-size: 1.25rem;
+    }
+    .project-card p {
+      font-size: 0.85rem;
+    }
+    .contact {
+      background: #ff80cc;
+      color: #1a1a1a;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact input,
+    .contact textarea {
+      margin: 10px 0;
+      padding: 12px;
+      font-family: 'Press Start 2P', cursive;
+      border: 2px solid #1a1a1a;
+      background: #fff;
+      color: #1a1a1a;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #1a1a1a;
+      color: #ffcc00;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pixel Persona</h1>
+    <p>Bringing the Past to the Future in Bold Colors</p>
+  </header>
+
+  <section class="section headline">
+    <h2>Hi, I'm a Graphic Designer Who Loves Neon & Nostalgia!</h2>
+    <p>I create visuals that feel like a blast from the past — with a modern twist.</p>
+  </section>
+
+  <section class="section projects">
+    <div class="project-card">
+      <h3>Retro Poster Series</h3>
+      <p>Posters inspired by 80s arcades and VHS covers.</p>
+    </div>
+    <div class="project-card">
+      <h3>Pixel Art Avatars</h3>
+      <p>Custom pixel portraits for streamers and creatives.</p>
+    </div>
+    <div class="project-card">
+      <h3>Analog Logo Pack</h3>
+      <p>Branding using cassette tape & floppy disk motifs.</p>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h2>Let’s Make Magic – Hit Me Up!</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea rows="4" placeholder="Tell me about your project..."></textarea>
+      <button type="submit">SEND</button>
+    </form>
+  </section>
+</body>
+</html>
